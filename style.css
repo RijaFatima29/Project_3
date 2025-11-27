@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+    background: linear-gradient(135deg, #A1C4FD, #C2E9FB, #FBC2EB, #A6C1EE);
+    background-size: 400% 400%;
+    animation: weatherFlow 12s ease infinite;
+}
+
+@keyframes weatherFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.container {
+    width: 350px;
+    margin: 80px auto;
+    background: rgb(233, 233, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #aaa;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #3a178a;
+    color: rgb(149, 146, 187);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
